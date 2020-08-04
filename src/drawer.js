@@ -18,6 +18,7 @@ import { Grid, Box, Card, CardContent } from "@material-ui/core";
 import Doughgraph from "./doughgraph";
 import Linechart from './linechart'
 import Stackchart from './stackedchart'
+import Wordcloud from './wordcloud'
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -169,7 +170,7 @@ export default function PermanentDrawerLeft() {
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
               <CardContent>
-                <Doughgraph />
+                <Wordcloud />
               </CardContent>
             </Card>
           </Grid>
