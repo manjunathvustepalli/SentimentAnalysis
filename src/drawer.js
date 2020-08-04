@@ -19,6 +19,8 @@ import Doughgraph from "./doughgraph";
 import Linechart from './linechart'
 import Stackchart from './stackedchart'
 import Wordcloud from './wordcloud'
+import Maps from './mapchart'
+import Treemap from './treegraph'
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -163,7 +165,7 @@ export default function PermanentDrawerLeft() {
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
               <CardContent>
-                <Doughgraph />
+                <Treemap />
               </CardContent>
             </Card>
           </Grid>
@@ -177,7 +179,7 @@ export default function PermanentDrawerLeft() {
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
               <CardContent>
-                <Doughgraph />
+                <Maps />
               </CardContent>
             </Card>
           </Grid>
