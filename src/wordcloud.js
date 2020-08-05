@@ -11,7 +11,7 @@ const options = {
   fontSizes: [5, 60],
   fontStyle: "normal",
   fontWeight: "normal",
-  padding: 1,
+  padding: 0,
   rotations: 0,
   rotationAngles: [0, 90],
   scale: "sqrt",

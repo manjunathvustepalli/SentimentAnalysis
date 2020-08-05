@@ -112,7 +112,7 @@ export default class linechart extends Component {
     return (
       <div>
         
-        <Line data={this.state.chartData} options={this.state.Option} />
+        <Line data={this.state.chartData} height={200} options={this.state.Option} />
       </div>
     );
   }
