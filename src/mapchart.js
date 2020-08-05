@@ -1,31 +1,29 @@
-import React, { Component } from 'react'
-import {
-    ComposableMap,
-    Geographies,
-    Geography,
-  } from "react-simple-maps"
-  
-  // url to a valid topojson file
-  // const geoUrl =
-  //   "https://raw.githubusercontent.com/samateja/D3topoJson/master/bangladesh.json"
-  
+import React, { Component } from "react";
+import { Chart } from "react-google-charts";
 export default class mapchart extends Component {
-    render() {
-        return (
-            <div>
-                 <div>
-      <ComposableMap  projectionConfig={{
-        // rotate: [58, 20, 0],
-        scale: 600
-      }}>
-        {/* <Geographies geography={geoUrl}>
-          {({geographies}) => geographies.map(geo =>
-            <Geography key={geo.rsmKey} geography={geo} />
-          )}
-        </Geographies> */}
-      </ComposableMap>
-    </div>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Chart
+          width={"500px"}
+          height={"250px"}
+          chartType="GeoChart"
+          data={[
+            ["latitude","longititude","color"],
+            [23.8103, 90.4125,"Covid"],
+            [22.3569,91.7832,"Covid"]
+          
+          ]}
+          options={{
+            region: "BD",
+            displayMode: "markers",
+            colorAxis: { colors: ["green", "blue"] },
+          }}
+          
+          mapsApiKey="AIzaSyBObgBsE05dyln5jCbiz74L0cQTTHTeaXQ"
+          rootProps={{ "data-testid": "2" }}
+        />
+      </div>
+    );
+  }
 }

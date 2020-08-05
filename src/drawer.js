@@ -146,6 +146,14 @@ export default function PermanentDrawerLeft() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
+            <Typography
+          variant="subtitle1"
+          gutterBottom
+          align="center"
+          style={{ color: "#4ee44e" }}
+        >
+          Sentiment wise Dashboard
+        </Typography>
               <CardContent>
                 <Linechart/>
               </CardContent>
@@ -153,6 +161,14 @@ export default function PermanentDrawerLeft() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
+            <Typography
+          variant="subtitle1"
+          gutterBottom
+          align="center"
+          style={{ color: "red" }}
+        >
+          Sentiment wise Dashboard
+        </Typography>
               <CardContent>
                 <Stackchart />
               </CardContent>
@@ -164,6 +180,14 @@ export default function PermanentDrawerLeft() {
         <Grid container direction="row" spacing={2} justify="flex-start">
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
+            <Typography
+          variant="subtitle1"
+          gutterBottom
+          align="center"
+          style={{ color: "blue" }}
+        >
+          Influencer summary
+        </Typography>
               <CardContent>
                 <Treemap />
               </CardContent>
@@ -171,6 +195,14 @@ export default function PermanentDrawerLeft() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
+            <Typography
+          variant="subtitle1"
+          gutterBottom
+          align="center"
+          style={{ color: "orange" }}
+        >
+          Word Cloud
+        </Typography>
               <CardContent>
                 <Wordcloud />
               </CardContent>
@@ -178,6 +210,14 @@ export default function PermanentDrawerLeft() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Card elevation={2} className={classes.cardheight}>
+            <Typography
+          variant="subtitle1"
+          gutterBottom
+          align="center"
+          style={{ color: "#4ee44e" }}
+        >
+          Geo Tagging Summary
+        </Typography>
               <CardContent>
                 <Maps />
               </CardContent>

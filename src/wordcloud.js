@@ -4,7 +4,7 @@ import words from "./words";
 import { Box } from "@material-ui/core";
 
 const options = {
-  colors: ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"],
+  colors: ["#1f77b4", "#ff7f0e", "#d62728", "#9467bd",],
   enableTooltip: true,
   deterministic: false,
   fontFamily: "impact",
