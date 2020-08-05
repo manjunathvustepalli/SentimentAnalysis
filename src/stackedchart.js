@@ -119,7 +119,7 @@ export default class stackchart extends Component {
   render() {
     return (
       <div>
-        <Line data={this.state.chartData} options={this.state.Option} />
+        <Line data={this.state.chartData} height={200} options={this.state.Option} />
       </div>
     );
   }
