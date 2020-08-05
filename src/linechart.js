@@ -13,12 +13,13 @@ export default class linechart extends Component {
           "Lowell",
           "Cambridge",
           "New Bedford",
+        
         ],
         datasets: [
           {
             label: "Population",
-            data: [617594, 181045, 153060, 106519, 105162, 95072],
-            label: "cehck",
+            data: [617594, 181045, 153060, 106519, 105162, 95072,1],
+            label: "check",
             borderColor: "rgba(255, 99, 132, 0.6)",
             fill: "true",
             backgroundColor: "rgba(255, 99, 132, 0.6)",
